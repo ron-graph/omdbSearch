@@ -1,0 +1,18 @@
+.Header {
+  background-color: #222;
+  height: 40px;
+  padding: 20px;
+  color: white;
+  positio: relative;
+
+  h2 {
+    margin-top: 1rem;
+    padding: 0;
+  }
+  a {
+    display: block;
+    position: absolute;
+    top: 1.5rem;
+    left: 7%;
+  }
+}

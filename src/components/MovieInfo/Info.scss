@@ -1,0 +1,43 @@
+.InfoHolder {
+  .Header {
+    display: flex;
+    height: auto;
+    background: -moz-linear-gradient(-45deg, #4c4c4c 2%, #2b2b2b 49%, #160809 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #4c4c4c 2%,#2b2b2b 49%,#160809 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #4c4c4c 2%,#2b2b2b 49%,#160809 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#160809',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    .Poster {
+      box-sizing: border-box;
+      background-size: cover;
+      height: 500px;
+      width: 40%;
+      border-radius: 5px;
+    }
+    .Details {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+      text-align: left;
+      width: 60%;
+      padding-left: 5%;
+      text-shadow: 2px 2px #000;
+
+      h2 {
+        line-height: 4rem;
+        border-bottom: dotted 1px #666;
+      }
+
+      .Sub {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .Actors {
+
+      }
+    }
+
+  }
+}
