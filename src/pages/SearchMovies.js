@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import CircularProgress from 'material-ui/CircularProgress';
 import SearchMoviesForm from 'src/components/SearchMoviesForm/SearchMoviesForm';
 import MoviesList from 'src/components/MoviesList/MoviesList';
 import { doSearch } from 'src/actions/searchMovies';
@@ -11,23 +11,19 @@ class SearchMovies extends Component {
             <div className="SearchField">
                 <SearchMoviesForm onSubmit={this.props.onSubmit}/>
                 {
-                    this.props.isSearching &&
-                    (<div>Loading</div>)
-                }
-                {
-                    !this.props.isSearching &&
-                    this.props.results &&
-                    (<MoviesList
+                    (this.props.isSearching &&
+                    !this.props.params.page &&
+                    (<div className="Loading"><CircularProgress size={80} /></div>)) ||
+                    (this.props.error &&
+                    (<div>{this.props.error}</div>)) ||
+                    (this.props.results &&
+                    <MoviesList
                         list={this.props.results}
                         total={this.props.pages}
                         page={this.props.params.page}
+                        isLoading={this.props.isSearching}
                         changePage={this.props.onChangePage}
                     />)
-                }
-                {
-                    !this.props.isSearching &&
-                    this.props.error &&
-                    (<div>{this.props.error}</div>)
                 }
             </div>
         );

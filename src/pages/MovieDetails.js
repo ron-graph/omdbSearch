@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import CircularProgress from 'material-ui/CircularProgress';
 import { fetchData } from 'src/actions/movieDetails';
 import MovieInfo from 'src/components/MovieInfo/MovieInfo';
 import SeriesInfo from 'src/components/MovieInfo/SeriesInfo';
@@ -14,7 +15,7 @@ class MovieDetails extends Component {
     render() {
         if(this.props.isLoading) {
             return (
-                <div>Loading</div>
+                <div className="Loading"><CircularProgress size={80} /></div>
             );
         }
         switch(this.props.type) {

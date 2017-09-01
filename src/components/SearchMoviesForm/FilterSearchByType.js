@@ -18,7 +18,7 @@ class FilterSearchByType extends ManagedInput {
                     ref="input"
                 >
                     <MenuItem value="all" primaryText="All"/>
-                    <MenuItem value="movies" primaryText="Movies"/>
+                    <MenuItem value="movie" primaryText="Movies"/>
                     <MenuItem value="series" primaryText="Series"/>
                     <MenuItem value="episode" primaryText="Episode"/>
                 </SelectField>
