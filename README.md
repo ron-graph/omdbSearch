@@ -18,6 +18,6 @@ Added some __ManagedInput__ base class (extends React component class) to easily
 
 
 ## Apologize in Advance
-Didn't went into transition effects, animations, etc. Also probably the CSS could be cleaner, and the Movie/Series info page was not componentized to a more atomic structure, nor even a better OOP design
-I've put the main focus and effort on the business logic and data flows architecture.
-The site is not quite compatible with mobile - it will work and all will be visible (more or less) but it's not really adjusted to different media queries
+Didn't went into transition effects, animations, etc. Also probably the CSS could be cleaner, and the Movie/Series info page was not componentized to a more atomic structure, nor even a better OOP design.  
+I've put the main focus and effort on the business logic and data flows architecture.  
+The site is not quite compatible with mobile - it will work and all will be visible (more or less) but it's not really adjusted to different media queries.
